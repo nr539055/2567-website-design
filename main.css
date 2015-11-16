@@ -545,3 +545,103 @@ footer nav{
   3.3 - Media
 
 =======================*/
+
+@media screen and (max-width: 480px) {
+
+	.wrapper {
+		width: 99%;
+	}
+
+	/*=====================
+	Images
+	=======================*/
+
+	body section:first-child header .col-1-4{
+		text-align: center;
+	}
+
+	#hero {
+		background-size: none;
+	}
+
+	/*====================
+	Lists
+	======================*/
+
+	body section:first-child nav{
+		margin:0;
+	}
+
+	section:first-child nav ul li a{
+		padding-left: .25rem;
+	}
+
+	dd:last-child{
+		margin-bottom: 4rem;
+	}
+
+	/*====================
+	Headings
+	======================*/
+
+	h1{
+		font-size: 4rem;
+	}
+
+	section:nth-child(3) section:nth-child(2) .col-1-4:nth-child(2) h3, section:nth-child(3) section:nth-child(2) .col-1-4:nth-child(3) h3 {
+		margin-top: 0;
+	}
+
+	.bg-green section .col-1-3:nth-child(2) p, section:nth-child(5) section:last-child p {
+		margin-bottom: 0;
+	}
+
+
+	/*====================
+	Alignment
+	======================*/
+
+	.bg-green .push-right{
+		float: left;
+	}
+
+	.bg-green .push-left{
+		float: right;
+	}
+
+	.bg-green .col-5-12, footer figure .col-1-4{
+		text-align: center;
+	}
+
+	/*====================
+	Structure
+	======================*/
+
+	.col-1-3, .col-2-3, .col-2-4, .col-1-2+.col-1-4, .row:last-child .col-1-4:last-child, .col-1-2, .col-1-4, .col-1-7:last-child, .bg-green .col-5-12{
+		width: 100%;
+	}
+
+	.col-1-8, .col-1-7, .col-1-11, .col-1-6+.col-1-3{
+		width: 25%;
+	}
+
+	.row:nth-child(14) .col-1-4, .col-3-8, .col-1-9, .col-1-11:nth-child(9), .col-1-11:nth-child(10), .col-1-11:last-child{
+		width:33.33%;
+	}
+
+	.col-1-10{
+		width: 20%;
+	}
+
+	.col-1-12{
+		width: 16.66%
+	}
+
+	.col-1-6+.col-1-3{
+		width: 33.32%;
+	}
+
+	.col-1-4:nth-child(2), .col-1-3, .col-2-3, .col-1-4+.col-1-2, .col-1-8:nth-child(4), .col-1-7:nth-child(4), .col-1-9:nth-child(3), .col-1-9:nth-child(6), .col-1-10:nth-child(5), .col-1-11:nth-child(4), .col-1-11:nth-child(8), .col-1-12:nth-child(6){
+		padding-right: 0;
+	}
+}
