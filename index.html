@@ -5,15 +5,21 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,700" rel="stylesheet" type="text/css">
 <title>Assignment 2</title>
 </head>
 
 <body>
 
-<div class="wrapper">
+
+<!--====================
+Header/Navigation
+=====================-->
+
+<section class="wrapper">
 	<header class="row">
 		<figure class="col-1-4"><img src="img/logo.jpg" alt="Transnect"/></figure>
-		<nav class="col-5-12">
+		<nav class="col-1-2">
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#services">Services</a></li>
@@ -23,9 +29,14 @@
 			</ul>
 		</nav>
 	</header>
-</div>
+</section>
 
-<div id="hero">
+
+<!--====================
+Hero Section
+=====================-->
+
+<section id="hero">
 	<div class="wrapper">
 		<header class="row">
 			<div class="col-1">
@@ -33,18 +44,23 @@
 			</div>
 			<div class="col-2-3">
 				<p>We offer solutions to process every payment on campus. We are PCI Level 1 Validated and integrate with every major ERP.</p>
-				<a href="#contact">Contact Us</a>
+				<a href="#contact" class="button">Contact Us</a>
 			</div>
 		</header>
 	</div>
-</div>
+</section>
 
-<div class="wrapper">
+
+<!--====================
+	Services
+=====================-->
+
+<section class="wrapper">
 	<header id="services">
 		<h2>Our Services</h2>
 	</header>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-1-4">
 			<header>
 				<h3>eBill &amp; ePay</h3>
@@ -72,9 +88,9 @@
 			</header>
 			<p>Sell goods, process event registrations, and solicit donations – all within a single, self-service web store with shopping cart functionality, inventory management, and more.</p>
 		</div>
-	</div>
+	</section>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-1-4">
 			<header>
 				<h3>Cashiering</h3>
@@ -102,17 +118,22 @@
 			</header>
 			<p>Offer an electronic payment gateway to corporations or organizations that wish to sponsor students by paying part or all of their tuition and fees.</p>
 		</div>
-	</div>
-	<a href="#contact">Contact Us</a>
-</div>
+	</section>
+	<a href="#contact" class="button">Contact Us</a>
+</section>
 
-<div class="bg-green">
+
+<!--====================
+	About Us
+=====================-->
+
+<section class="bg-green">
 	<div class="wrapper">
 		<header id="about">
 			<h2>About</h2>
 		</header>
 
-		<div class="row">
+		<section class="row">
 			<div class="col-1-3">
 				<header>
 					<h3>We Operate with Integrity</h3>
@@ -131,17 +152,22 @@
 				</header>
 				<p>Finding new ways to solve problems inspires us. We listen, we challenge traditional thinking, and we never give up.</p>
 			</div>
-		</div>
-		<a href="#contact">Contact Us</a>
+		</section>
+		<a href="#contact" class="button">Contact Us</a>
 	</div>
-</div>
+</section>
 
-<div class="wrapper">
+
+<!--====================
+Why Choose Us
+=====================-->
+
+<section class="wrapper">
 	<header id="why">
 		<h2>Why Choose Us</h2>
 	</header>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-1-3">
 			<header>
 				<h3>Integrated</h3>
@@ -162,9 +188,9 @@
 			</header>
 			<p>Delivering superior customer experiences is part of the Business Code of Conduct</p>
 		</div>
-	</div>
+	</section>
 
-	<div class="row">
+	<section class="row">
 		<div class="col-1-3">
 			<header>
 				<h3>Vibrant</h3>
@@ -183,24 +209,87 @@
 			</header>
 			<p>Business Solutions is PCI Level 1 Validated, and SSAE 16 Audited.</p>
 		</div>
-	</div>
-</div>
+	</section>
+</section>
 
-<div class="bg-green">
+
+<!--====================
+	Contact Us
+=====================-->
+
+<section class="bg-green">
 	<div class="wrapper">
+
 		<header id="contact">
 			<h2>Contact Us</h2>
+			<ul>
+				<li><a href="https://www.facebook.com" target="_blank"></a></li>
+				<li><a href="https://www.twitter.com" target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com" target="_blank"></a></li>
+			</ul>
 		</header>
 
 		<div class="row">
-			<form class="5-12">
-				<label for="name">Name</label>
-        		<input type="text" name="first-name" id="name">	
-        		<label for="email">E-mail</label>
-        		<input type="e-mail" name="e-mail" id="email">
-	        	<p>Message</p>
-	        	<textarea></textarea>
-			</form>
+			<section>
+				<div class="col-5-12 push-right">
+					<header>
+						<h3>Upcoming Conferences</h3>
+					</header>
+					  <dl>
+					  	<dt>Lincoln, Nebraska</dt>
+					  	<dd>11/30/15</dd>
+					  	<dd>Short synopsis of what we’ll be talking about</dd>
+					  	<dt>Omaha, Nebraska</dt>
+					  	<dd>12/15/15</dd>
+					  	<dd>Short synopsis of what we’ll be talking about</dd>
+					  	<dt>Kearney, Nebraska</dt>
+					  	<dd>01/25/15</dd>
+					  	<dd>Short synopsis of what we’ll be talking about</dd>
+					  </dl>
+				</div>
+			</section>
+
+			<section>
+				<form class="col-5-12 push-left">
+					<label for="name">Name</label>
+	        		<input type="text" name="first-name" id="name">	
+	        		<label for="email">E-mail</label>
+	        		<input type="email" name="e-mail" id="email">
+		        	<p>Message</p>
+		        	<textarea></textarea>
+		        	<a href="#" class="button">Send</a>
+				</form>
+		</section>
 		</div>
 	</div>
-</div>
+</section>
+
+
+<!--====================
+	Footer
+=====================-->
+
+<footer class="wrapper">
+	<div class="row">
+		<figure class="col-1-4"><img src="img/logo-footer.jpg" alt="transnect" /></figure>
+		<nav class="col-1-4">
+			<ul class="col-1-3">
+				<li><a href="#">Home</a></li>
+				<li><a href="#services">Services</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+			<ul class="col-1-3">
+				<li><a href="#why">Why Us</a></li>
+				<li><a href="#contact">Contact Us</a></li>
+			</ul>
+		</nav>
+		<div class="col-1-6">
+			<h3>Connect</h3>
+			<ul>
+				<li><a href="https://www.facebook.com" target="_blank"></a></li>
+				<li><a href="https://www.twitter.com" target="_blank"></a></li>
+				<li><a href="https://www.linkedin.com" target="_blank"></a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
